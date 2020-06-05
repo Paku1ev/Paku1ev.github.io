@@ -1,0 +1,78 @@
+//Переменные
+$white: #F7F7F7;
+$orange: #CA6E1B;
+$font: 'Roboto', sans-serif;
+
+/* Стандартные настройки */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Шапка */
+header {
+    padding: 15px 150px 15px 150px;
+    background-color: $white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    img:not(.header-logo) {
+        height: 25px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .header-item-adress {
+        margin-bottom: 10px;
+
+        img {
+            margin-top: 5px;
+        }
+
+        .header-item-span-1 {
+            display: block;
+        }
+
+        .header-item-span-2 {
+            font-size: 0.8rem;
+        }
+    }
+
+    .header-item-datetime {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-center{
+        display: flex;
+        align-items: center;
+        img {
+            height: 40px;
+        }
+
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .header-right-info {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header-right-info:last-child {
+            margin-bottom: 0px;
+        }
+        span {
+            margin-right: 10px;
+        }
+    }
+}

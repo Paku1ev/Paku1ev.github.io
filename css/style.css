@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* Стандартные настройки */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Шапка */
+header {
+  padding: 15px 150px 15px 150px;
+  background-color: #F7F7F7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+header img:not(.header-logo) {
+  height: 25px;
+  float: left;
+  margin-right: 5px;
+}
+
+header .header-item-adress {
+  margin-bottom: 10px;
+}
+
+header .header-item-adress img {
+  margin-top: 5px;
+}
+
+header .header-item-adress .header-item-span-1 {
+  display: block;
+}
+
+header .header-item-adress .header-item-span-2 {
+  font-size: 0.8rem;
+}
+
+header .header-item-datetime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-center img {
+  height: 40px;
+}
+
+header .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-right .header-right-info {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-right .header-right-info:last-child {
+  margin-bottom: 0px;
+}
+
+header .header-right span {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -54,12 +54,9 @@ header .header-item-datetime {
 }
 
 header .header-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 header .header-center img {
@@ -98,5 +95,29 @@ header .header-right .header-right-info:last-child {
 
 header .header-right span {
   margin-right: 10px;
+}
+
+nav {
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+nav a:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,9 @@ $font: 'Roboto', sans-serif;
 $black_orgn: #000;
 $white_orgn: #fff;
 
+//Миксины
+@mixin button() {}
+
 /* Стандартные настройки */
 *, *:before, *:after {
     box-sizing: border-box;
@@ -94,4 +97,11 @@ nav {
         color: $white_orgn;
         transition: 0.5s;
     }
+}
+
+//Обложка
+.cover {
+    max-height: 700px;
+    display: grid;
+    
 }

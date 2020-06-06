@@ -120,4 +120,10 @@ nav a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.cover {
+  max-height: 700px;
+  display: -ms-grid;
+  display: grid;
+}
 /*# sourceMappingURL=style.css.map */

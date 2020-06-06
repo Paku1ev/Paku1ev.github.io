@@ -1,13 +1,42 @@
 //Переменные
 $white: #F7F7F7;
 $orange: #CA6E1B;
-$font: 'Roboto', sans-serif;
+$yellow: #F7BA08;
 
 $black_orgn: #000;
 $white_orgn: #fff;
+$font: 'Roboto', sans-serif;
 
 //Миксины
-@mixin button() {}
+@mixin button($color) {
+    padding: 20px 30px;
+    margin: 0 10px;
+    color: $white_orgn;
+    background-color: $color;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    &:hover {
+        background-color: darken($color, 20%);
+        transition: 0.5s;
+    }
+}
+@mixin button_2 {
+    padding: 18px 30px;
+    margin: 0 10px;
+    color: $white_orgn;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: solid $yellow 2px;
+    &:hover {
+        background-color: $white_orgn;
+        border: solid $white_orgn 2px;
+        color: $black_orgn;
+        transition: 0.5s;
+    }
+}
 
 /* Стандартные настройки */
 *, *:before, *:after {
@@ -101,7 +130,34 @@ nav {
 
 //Обложка
 .cover {
-    max-height: 700px;
-    display: grid;
-    
+    display: flex;
+    height: 650px;
+    color: $white_orgn;
+    background-image: url(../img/bg-cover.jpg);
+    background-size: cover;
+    .cover-content {
+        margin: auto;
+    }
+    h1 {
+        font-size: 46px;
+        text-align: center;
+        margin: 0 0 1.5rem;
+
+    }
+    h2 {
+        text-align: center;
+        font-weight: normal;
+    }
+    .buttons {
+        text-align: center;
+        margin-top: 40px;
+        .cover-btn-1 {
+            @include button($yellow);
+        }
+        div {
+            @include button_2;
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
 }

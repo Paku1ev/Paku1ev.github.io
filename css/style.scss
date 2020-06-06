@@ -3,9 +3,6 @@ $white: #F7F7F7;
 $orange: #CA6E1B;
 $font: 'Roboto', sans-serif;
 
-$black_orgn: #000;
-$white_orgn: #fff;
-
 /* Стандартные настройки */
 *, *:before, *:after {
     box-sizing: border-box;
@@ -33,6 +30,7 @@ header {
 
     .header-item-adress {
         margin-bottom: 10px;
+
         img {
             margin-top: 5px;
         }
@@ -52,7 +50,8 @@ header {
     }
 
     .header-center{
-        align-self: center;
+        display: flex;
+        align-items: center;
         img {
             height: 40px;
         }
@@ -75,23 +74,5 @@ header {
         span {
             margin-right: 10px;
         }
-    }
-}
-
-//Навигация
-nav {
-    background-color: $white;
-    display: flex;
-    justify-content: center;
-    a {
-        text-decoration: none;
-        padding: 10px 10px;
-        font-weight: bold;
-        color: $black_orgn;
-    }
-    a:hover {
-        background-color: $black_orgn;
-        color: $white_orgn;
-        transition: 0.5s;
     }
 }

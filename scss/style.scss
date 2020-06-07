@@ -161,3 +161,22 @@ nav {
         }
     }
 }
+
+//Цифры о компании
+.stats {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    &-item {
+        text-align: center;
+        margin: auto 50px auto 50px;
+        span {
+            font-size: 64px;
+            color: $orange;
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}

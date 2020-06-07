@@ -2,12 +2,14 @@
 $white: #F7F7F7;
 $orange: #CA6E1B;
 $yellow: #F7BA08;
+$darkBlue: #161D23;
 
 $black_orgn: #000;
 $white_orgn: #fff;
 $font: 'Roboto', sans-serif;
 
 //Миксины
+//Основная кнопка
 @mixin button($color) {
     padding: 20px 30px;
     margin: 0 10px;
@@ -22,6 +24,7 @@ $font: 'Roboto', sans-serif;
         transition: 0.5s;
     }
 }
+//Второстепенная кнопка
 @mixin button_2 {
     padding: 18px 30px;
     margin: 0 10px;
@@ -36,6 +39,11 @@ $font: 'Roboto', sans-serif;
         color: $black_orgn;
         transition: 0.5s;
     }
+}
+//Заголовок 2 уровня
+@mixin headline {
+    font-size: 40px;
+    text-align: center;
 }
 
 /* Стандартные настройки */
@@ -134,6 +142,7 @@ nav {
     height: 650px;
     color: $white_orgn;
     background-image: url(../img/bg-cover.jpg);
+    background-attachment: fixed;
     background-size: cover;
     .cover-content {
         margin: auto;
@@ -167,6 +176,7 @@ nav {
     display: flex;
     justify-content: center;
     height: 300px;
+    background-color: $white;
     &-item {
         text-align: center;
         margin: auto 50px auto 50px;
@@ -177,6 +187,34 @@ nav {
         }
         p {
             font-size: 20px;
+        }
+    }
+}
+
+//Секция "Наши услуги"
+.services {
+    padding: 100px 180px 100px 180px; //Здесь заданы поля по бокам
+    background-color: $darkBlue;
+    color: $white_orgn;
+    h2 {
+        @include headline;
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        &-item {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 15px;
+            }
+            p {
+                font-size: 20px;
+            }
         }
     }
 }

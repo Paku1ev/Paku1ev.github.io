@@ -128,6 +128,7 @@ nav a:hover {
   height: 650px;
   color: #fff;
   background-image: url(../img/bg-cover.jpg);
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -196,6 +197,7 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   height: 300px;
+  background-color: #F7F7F7;
 }
 
 .stats-item {
@@ -210,6 +212,46 @@ nav a:hover {
 }
 
 .stats-item p {
+  font-size: 20px;
+}
+
+.services {
+  padding: 100px 180px 100px 180px;
+  background-color: #161D23;
+  color: #fff;
+}
+
+.services h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.services-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+}
+
+.services-items-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-items-item img {
+  margin-right: 15px;
+}
+
+.services-items-item p {
   font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

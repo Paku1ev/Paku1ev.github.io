@@ -8,6 +8,8 @@ $black_orgn: #000;
 $white_orgn: #fff;
 $font: 'Roboto', sans-serif;
 
+$padding: 110px 150px 110px 150px; //Здесь заданы поля по бокам
+
 //Миксины
 //Основная кнопка
 @mixin button($color) {
@@ -42,6 +44,7 @@ $font: 'Roboto', sans-serif;
 }
 //Заголовок 2 уровня
 @mixin headline {
+    margin: 0 0 35px 0;
     font-size: 40px;
     text-align: center;
 }
@@ -193,7 +196,7 @@ nav {
 
 //Секция "Наши услуги"
 .services {
-    padding: 100px 180px 100px 180px; //Здесь заданы поля по бокам
+    padding: $padding;
     background-color: $darkBlue;
     color: $white_orgn;
     h2 {
@@ -205,15 +208,56 @@ nav {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-auto-flow: column;
         grid-row-gap: 40px;
-        grid-column-gap: 40px;
+        grid-column-gap: 110px;
         &-item {
             display: flex;
             align-items: center;
             img {
+                width: 60px;
                 margin-right: 15px;
             }
             p {
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+//Секция "Наши преимущества"
+.advantages {
+    padding: $padding;
+    background-color: $white;
+    h2 {
+        @include headline;
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 40px;
+        grid-column-gap: 30px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 7px;
+            padding: 15px;
+            &:hover {
+                transition: 0.4s;
+                box-shadow: 0 0 20px $black_orgn;
+
+            }
+            img {
+                width: 150px;
+            }
+            span {
+                font-size: 26px;
+                font-weight: bold;
+                margin: 25px 0 25px 0;
+            }
+            p {
+                margin: 0;
+                text-align: center;
             }
         }
     }

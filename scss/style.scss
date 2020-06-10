@@ -149,7 +149,7 @@ nav {
     background-image: url(../img/bg-cover.jpg);
     background-attachment: fixed;
     background-size: cover;
-    .cover-content {
+    .cover__content {
         margin: auto;
     }
     h1 {
@@ -163,14 +163,14 @@ nav {
         font-weight: normal;
         margin: 40px 0 40px 0;
     }
-    .buttons {
+    .cover__buttons {
         text-align: center;
         margin-top: 40px;
         text-decoration: none;
-        .cover-btn-1 {
+        .cover__buttons__btn-1 {
             @include button($yellow);
         }
-        .cover-btn-2 {
+        .cover__buttons__btn-2 {
             @include button_2;
             display: inline-block;
         }
@@ -183,7 +183,7 @@ nav {
     justify-content: center;
     height: 300px;
     background-color: $white;
-    &-item {
+    &__item {
         text-align: center;
         margin: auto 50px auto 50px;
         span {
@@ -205,14 +205,14 @@ nav {
     h2 {
         @include headline;
     }
-    &-items {
+    &__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-auto-flow: column;
         grid-row-gap: 40px;
         grid-column-gap: 110px;
-        &-item {
+        &__item {
             display: flex;
             align-items: center;
             img {
@@ -233,13 +233,13 @@ nav {
     h2 {
         @include headline;
     }
-    &-items {
+    &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 40px;
         grid-column-gap: 30px;
-        &-item {
+        &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -273,7 +273,7 @@ nav {
     h2 {
         @include headline;
     }
-    &-items {
+    &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;

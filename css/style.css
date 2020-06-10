@@ -318,4 +318,31 @@ nav a:hover {
   margin: 0;
   text-align: center;
 }
+
+.customers {
+  background-color: #fff;
+  padding: 110px 150px 110px 150px;
+}
+
+.customers h2 {
+  margin: 0 0 35px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.customers-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.customers-items img {
+  max-width: 240px;
+}
 /*# sourceMappingURL=style.css.map */

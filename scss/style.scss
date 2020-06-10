@@ -265,3 +265,22 @@ nav {
         }
     }
 }
+
+//Секция "Наши клиенты"
+.customers {
+    background-color: $white_orgn;
+    padding: $padding;
+    h2 {
+        @include headline;
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        img {
+            max-width: 240px;
+        }
+    }
+}

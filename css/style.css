@@ -145,11 +145,13 @@ nav a:hover {
 .cover h2 {
   text-align: center;
   font-weight: normal;
+  margin: 40px 0 40px 0;
 }
 
 .cover .buttons {
   text-align: center;
   margin-top: 40px;
+  text-decoration: none;
 }
 
 .cover .buttons .cover-btn-1 {
@@ -159,6 +161,7 @@ nav a:hover {
   background-color: #F7BA08;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
   border-radius: 30px;
   border: none;
 }
@@ -169,7 +172,7 @@ nav a:hover {
   transition: 0.5s;
 }
 
-.cover .buttons div {
+.cover .buttons .cover-btn-2 {
   padding: 18px 30px;
   margin: 0 10px;
   color: #fff;
@@ -177,11 +180,11 @@ nav a:hover {
   font-weight: bold;
   border-radius: 30px;
   border: solid #F7BA08 2px;
-  display: inline-block;
   text-decoration: none;
+  display: inline-block;
 }
 
-.cover .buttons div:hover {
+.cover .buttons .cover-btn-2:hover {
   background-color: #fff;
   border: solid #fff 2px;
   color: #000;

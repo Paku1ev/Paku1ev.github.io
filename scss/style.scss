@@ -19,6 +19,7 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
     background-color: $color;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
     border-radius: 30px;
     border: none;
     &:hover {
@@ -35,6 +36,7 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
     font-weight: bold;
     border-radius: 30px;
     border: solid $yellow 2px;
+    text-decoration: none;
     &:hover {
         background-color: $white_orgn;
         border: solid $white_orgn 2px;
@@ -159,17 +161,18 @@ nav {
     h2 {
         text-align: center;
         font-weight: normal;
+        margin: 40px 0 40px 0;
     }
     .buttons {
         text-align: center;
         margin-top: 40px;
+        text-decoration: none;
         .cover-btn-1 {
             @include button($yellow);
         }
-        div {
+        .cover-btn-2 {
             @include button_2;
             display: inline-block;
-            text-decoration: none;
         }
     }
 }

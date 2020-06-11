@@ -164,12 +164,12 @@ nav a:hover {
   text-decoration: none;
   border-radius: 30px;
   border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cover .cover__buttons .cover__buttons__btn-1:hover {
   background-color: #947005;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .cover .cover__buttons .cover__buttons__btn-2 {
@@ -181,6 +181,8 @@ nav a:hover {
   border-radius: 30px;
   border: solid #F7BA08 2px;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: inline-block;
 }
 
@@ -188,8 +190,6 @@ nav a:hover {
   background-color: #fff;
   border: solid #fff 2px;
   color: #000;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .stats {

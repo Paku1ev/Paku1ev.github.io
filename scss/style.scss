@@ -22,9 +22,9 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
     text-decoration: none;
     border-radius: 30px;
     border: none;
+    transition: 0.5s;
     &:hover {
         background-color: darken($color, 20%);
-        transition: 0.5s;
     }
 }
 //Второстепенная кнопка
@@ -37,11 +37,11 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
     border-radius: 30px;
     border: solid $yellow 2px;
     text-decoration: none;
+    transition: 0.5s;
     &:hover {
         background-color: $white_orgn;
         border: solid $white_orgn 2px;
         color: $black_orgn;
-        transition: 0.5s;
     }
 }
 //Заголовок 2 уровня

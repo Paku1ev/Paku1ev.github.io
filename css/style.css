@@ -344,6 +344,7 @@ nav a:hover {
 
 .customers__items img {
   max-width: 240px;
+  max-height: 130px;
 }
 
 .map {

@@ -351,4 +351,45 @@ nav a:hover {
   background-color: #161D23;
   text-align: center;
 }
+
+footer {
+  padding: 50px 150px 50px 150px;
+  background-color: #000;
+  color: #fff;
+}
+
+footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__container .footer__left p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+footer .footer__container .footer__center img {
+  height: 40px;
+}
+
+footer .footer__container .footer__right {
+  text-align: right;
+}
+
+footer .footer__container .footer__right .footer__right__mail {
+  margin-top: 10px;
+}
+
+footer .footer__copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */

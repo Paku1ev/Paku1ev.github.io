@@ -291,3 +291,35 @@ nav {
     background-color: $darkBlue;
     text-align: center;
 }
+
+//Подвал
+footer {
+    padding: 50px 150px 50px 150px;
+    background-color: $black_orgn;
+    color: $white_orgn;
+    .footer__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .footer__left {
+            p {
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+        .footer__center img {
+            height: 40px;
+        }
+        .footer__right {
+            text-align: right;
+            .footer__right__mail {
+                margin-top: 10px;
+            }
+        }
+    }
+    .footer__copyright {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}

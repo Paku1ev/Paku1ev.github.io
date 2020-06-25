@@ -6,6 +6,7 @@ $darkBlue: #161D23;
 
 $black_orgn: #000;
 $white_orgn: #fff;
+
 $font: 'Roboto', sans-serif;
 
 $padding: 110px 150px 110px 150px; //Здесь заданы поля по бокам
@@ -150,7 +151,7 @@ nav {
     background-attachment: fixed;
     background-size: cover;
     .cover__content {
-        margin: auto;
+        margin: auto; //Работает, если у родителя FlexBox
     }
     h1 {
         font-size: 46px;
@@ -262,6 +263,81 @@ nav {
                 margin: 0;
                 text-align: center;
             }
+        }
+    }
+}
+
+//Секция "Наши работы"
+.portfolio {
+    background-color: $darkBlue;
+    padding: $padding;
+    h2 {
+        @include headline();
+        color: $white_orgn;
+    }
+    .portfolio__slider {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        // grid-template-rows: 1fr 0.1fr;
+        position: relative;
+        #btn__prev, #btn__next {
+            background-color: red;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            justify-self: center;
+            align-self: center;
+            transition: 0.3s;
+            &:hover {
+                background-color: white;
+            }
+        }
+        .portfolio__slide {
+            width: 100%;
+            height: 100%;
+            justify-items: center;
+            display: none;
+            img{
+                width: 700px;
+            }
+        }
+        .portfolio__slide.active {
+            display: block;
+        }
+    }
+    .portfolio__dots {
+        display: flex;
+        justify-content: center;
+        .portfolio__dot {
+            background-color: $white_orgn;
+            margin: 0 8px 0 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-top: 30px;
+            width: 10px;
+            height: 10px;
+            transition: 0.3s;
+            &:hover {
+                background-color: $orange;
+            }
+        }
+        .portfolio__dot.active {
+            background-color: $orange;
+        }
+    }
+    .portfolio__look-all {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        padding: 20px 30px 20px 30px;
+        margin: 65px auto 0 auto;
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: $orange;
+        color: $white_orgn;
+        transition: 0.3s;
+        &:hover {
+            background-color: lighten($orange, 20);
         }
     }
 }

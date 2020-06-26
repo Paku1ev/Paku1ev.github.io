@@ -374,7 +374,8 @@ nav a:hover {
 }
 
 .portfolio .portfolio__slider .portfolio__slide img {
-  width: 740px;
+  border-radius: 10px;
+  width: 840px;
   height: 460px;
 }
 

@@ -1,8 +1,7 @@
 const prev = document.getElementById('btn__prev'), //Получаем кнопку "Назад"
 next = document.getElementById('btn__next'), //Получаем кнопку "Вперёд"
 slides = document.querySelectorAll('.portfolio__slide'), //Получаем фотографии в слайдере
-dots = document.querySelectorAll('.portfolio__dot'), //Получаем навигационные точки под слайдером
-portfolioSlider = document.querySelectorAll('.portfolio__slider'); //Получаем контейнер слайдера (Стоит ли исп. &All ???)
+dots = document.querySelectorAll('.portfolio__dot') //Получаем навигационные точки под слайдером
 
 let index = 0; //Индекс элемента по умолчанию
 

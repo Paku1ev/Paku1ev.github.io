@@ -166,6 +166,7 @@ nav a:hover {
   border: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .cover .cover__buttons .cover__buttons__btn-1:hover {
@@ -184,6 +185,7 @@ nav a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: inline-block;
+  cursor: pointer;
 }
 
 .cover .cover__buttons .cover__buttons__btn-2:hover {

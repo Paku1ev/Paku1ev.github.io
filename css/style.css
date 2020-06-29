@@ -376,7 +376,7 @@ nav a:hover {
 .portfolio .portfolio__slider .portfolio__slide img {
   border-radius: 10px;
   width: 840px;
-  height: 460px;
+  height: 480px;
 }
 
 .portfolio .portfolio__slider .portfolio__slide.active {
@@ -466,6 +466,57 @@ nav a:hover {
   padding: 50px 0 50px 0;
   background-color: #161D23;
   text-align: center;
+}
+
+.form {
+  padding: 110px 150px 110px 150px;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+.form__message {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  width: 650px;
+}
+
+.form form {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.form form .form_form {
+  height: 45px;
+  width: 650px;
+  margin-bottom: 20px;
+}
+
+.form form .form__btn {
+  text-align: center;
+}
+
+.form form .form__button {
+  padding: 15px 30px 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #CA6E1B;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form form .form__button:hover {
+  background-color: #eaa261;
+}
+
+.form form p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 footer {

@@ -305,7 +305,7 @@ nav {
             img{
                 border-radius: 10px;
                 width: 840px;
-                height: 460px;
+                height: 480px;
             }
         }
         .portfolio__slide.active {
@@ -374,6 +374,49 @@ nav {
     padding: 50px 0 50px 0;
     background-color: $darkBlue;
     text-align: center;
+}
+
+// Фома заявки
+.form {
+    padding: $padding;
+    display: grid;
+    grid-row-gap: 25px;
+    &__message {
+        justify-self: center;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        width: 650px;
+    }
+    form {
+        justify-self: center;
+        .form_form {
+            height: 45px;
+            width: 650px;
+            margin-bottom: 20px;
+        }
+
+        .form__btn {
+            text-align: center;
+        }
+
+        .form__button {
+            padding: 15px 30px 15px 30px;
+            font-size: 16px;
+            color: $white_orgn;
+            background-color: $orange;
+            border: none;
+            transition: 0.3s;
+            &:hover {
+                background-color: lighten($orange, 20);
+            }
+        }
+        p {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    }
 }
 
 //Подвал

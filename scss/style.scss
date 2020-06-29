@@ -145,7 +145,7 @@ nav {
 //Обложка
 .cover {
     display: flex;
-    height: 650px;
+    min-height: 650px;
     color: $white_orgn;
     background-image: url(../img/bg-cover.jpg);
     background-attachment: fixed;
@@ -182,7 +182,7 @@ nav {
 .stats {
     display: flex;
     justify-content: center;
-    height: 300px;
+    min-height: 300px;
     background-color: $white;
     &__item {
         text-align: center;

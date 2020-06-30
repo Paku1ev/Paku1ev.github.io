@@ -344,6 +344,27 @@
         <div class="footer__copyright">&#169; 2019-2020 ООО &#171;Росреклама&#187; Все права защищены.</div>
     </footer>
 
+    <!-- Плавный скролл до секции N ("Наши работы") -->
+    <script>
+        const portfolio = document.querySelector('.portfolio')
+        //console.log(portfolio)
+        const btn = document.querySelector('.cover__buttons__btn-2')
+        //console.log(btn)
+
+        const scrollTo = elem => {
+            window.scroll({
+                left: 0,
+                top: elem.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        btn.addEventListener('click', () => {
+            //console.log('TEST');
+            scrollTo(portfolio);
+        })
+    </script>
+
     <script src="js/slider.js"></script>
 </body>
 </html>

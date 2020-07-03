@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 1200px) {
+  header {
+    max-width: 860px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  header {
+    display: none;
+  }
+  .header-bar-img {
+    display: inline-block;
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=media.css.map */

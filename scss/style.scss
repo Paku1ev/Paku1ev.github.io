@@ -9,7 +9,7 @@ $white_orgn: #fff;
 
 $font: 'Roboto', sans-serif;
 
-$padding: 110px 150px 110px 150px; //Здесь заданы поля по бокам
+$padding: 110px 0 110px 0; //Здесь заданы поля по бокам
 
 //Миксины
 //Основная кнопка
@@ -71,7 +71,7 @@ body {
     font-size: 16px;
 }
 
-//адаптивные контейнеры
+//Адаптивные контейнеры (Нужны для заполнения фона и т.п)
 .header-container {
     background-color: $white;
 }
@@ -216,11 +216,11 @@ nav {
 .stats {
     display: flex;
     justify-content: center;
-    min-height: 300px;
+    padding: 50px 0;
     background-color: $white;
     &__item {
         text-align: center;
-        margin: auto 50px auto 50px;
+        margin: 0 50px;
         span {
             font-size: 64px;
             color: $orange;

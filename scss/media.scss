@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-width: 600px) { //700
+@media screen and (max-width: 650px) { //700
     //Обложка
     .cover__content {
         h1 {
@@ -43,12 +43,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // .cover__buttons__btn-2 {
-        //     margin-top: 100px;
-        // }
+    }
+    //Статистика компании
+    .stats__item {
+        margin: 0 20px;
     }
 }
 
-@media screen and (max-width: 460px) {
-
+@media screen and (max-width: 480px) {
+    //Статистика компании
+    .stats {
+        display: flex;
+        flex-direction: column;
+    }
 }

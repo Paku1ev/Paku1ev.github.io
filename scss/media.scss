@@ -1,9 +1,20 @@
 @media screen and (max-width: 1200px) {
-    
+    header {
+        max-width: 860px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
-@media screen and (max-width: 860px) {
-    
+@media screen and (max-width: 960px) {
+    .header__bar-img {
+        display: inline-block;
+        position: fixed;
+        left: 30px;
+        top: 30px;
+    }
+    header {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {

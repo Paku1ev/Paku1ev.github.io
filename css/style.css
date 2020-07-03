@@ -16,6 +16,10 @@ body {
   background-color: #F7F7F7;
 }
 
+.nav-container {
+  background-color: #F7F7F7;
+}
+
 .services-container {
   background-color: #161D23;
 }
@@ -119,13 +123,15 @@ header .header-right span {
 }
 
 nav {
-  background-color: #F7F7F7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 nav a {

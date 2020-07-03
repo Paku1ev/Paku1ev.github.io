@@ -76,6 +76,10 @@ body {
     background-color: $white;
 }
 
+.nav-container {
+    background-color: $white;
+}
+
 .services-container {
     background-color: $darkBlue;
 }
@@ -149,9 +153,9 @@ header {
 
 //Навигация
 nav {
-    background-color: $white;
     display: flex;
     justify-content: center;
+    @include adaptConteiner;
     a {
         text-decoration: none;
         padding: 10px 10px;

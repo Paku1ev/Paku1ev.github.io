@@ -8,12 +8,15 @@
 
 @media screen and (max-width: 960px) {
   .header__bar-img {
-    display: inline-block;
+    display: block;
     position: fixed;
     left: 30px;
     top: 30px;
   }
   header {
+    display: none;
+  }
+  nav {
     display: none;
   }
 }

@@ -1,33 +1,54 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) { // 1100
+    //Шапка
     header {
         max-width: 860px;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) { //800
+    //Шапка
     .header__bar-img {
         display: block;
         position: fixed;
-        left: 30px;
-        top: 30px;
+        left: 10px;
+        top: 10px;
     }
     header {
         display: none;
     }
+    //Навигация
     nav {
         display: none;
     }
+    //Обложка
+    .cover__content {
+        h1 {
+            font-size: 36px;
+        }
+    }
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 600px) { //700
+    //Обложка
+    .cover__content {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .cover__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // .cover__buttons__btn-2 {
+        //     margin-top: 100px;
+        // }
+    }
 }
 
-@media screen and (max-width: 400px) {
-
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 460px) {
 
 }

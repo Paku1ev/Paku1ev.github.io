@@ -10,14 +10,38 @@
   .header__bar-img {
     display: block;
     position: fixed;
-    left: 30px;
-    top: 30px;
+    left: 10px;
+    top: 10px;
   }
   header {
     display: none;
   }
   nav {
     display: none;
+  }
+  .cover__content h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cover__content h1 {
+    font-size: 30px;
+  }
+  .cover__content h2 {
+    font-size: 22px;
+  }
+  .cover__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=media.css.map */

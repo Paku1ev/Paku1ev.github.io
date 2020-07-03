@@ -31,7 +31,7 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
 //Второстепенная кнопка
 @mixin button_2 {
     padding: 18px 30px;
-    margin: 0 10px;
+    margin: 10px 10px 0;
     color: $white_orgn;
     font-size: 16px;
     font-weight: bold;
@@ -80,6 +80,12 @@ body {
     background-color: $white;
 }
 
+.cover-container {
+    background-image: url(../img/bg-cover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .services-container {
     background-color: $darkBlue;
 }
@@ -87,11 +93,12 @@ body {
 /* Шапка */
 .header__bar-img {
     display: none;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 header {
     @include adaptConteiner;
+    padding-top: 10px;
     background-color: $white;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -172,11 +179,9 @@ nav {
 //Обложка
 .cover {
     display: flex;
+    @include adaptConteiner;
     min-height: 650px;
     color: $white_orgn;
-    background-image: url(../img/bg-cover.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     .cover__content {
         margin: auto; //Работает, если у родителя FlexBox
     }

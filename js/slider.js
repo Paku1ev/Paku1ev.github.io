@@ -1,7 +1,7 @@
 const prev = document.getElementById('btn__prev'), //Получаем кнопку "Назад"
 next = document.getElementById('btn__next'), //Получаем кнопку "Вперёд"
 slides = document.querySelectorAll('.portfolio__slide'), //Получаем фотографии в слайдере
-dots = document.querySelectorAll('.portfolio__dot') //Получаем навигационные точки под слайдером
+dots = document.querySelectorAll('.portfolio__dot'); //Получаем навигационные точки под слайдером
 
 let index = 0; //Индекс элемента по умолчанию
 
@@ -21,13 +21,13 @@ const activeDot = n => {
         i.classList.remove('active');
     }
     dots[n].classList.add('active');
-}
+};
 
 // 3. Функция активирует функции отвечающие за изменение активного слайда и активной навигационной точки
 const prepareCurrentSlide = ind => {
     activeSlide(ind);
     activeDot(ind);
-}
+};
 
 // 2а. Функция проверяет, является ли слайд последним по текущему индексу. Если да, то пролистывание вперёд начинается с самого начала
 const nextSlide = () => {
@@ -38,7 +38,7 @@ const nextSlide = () => {
         index++;
         prepareCurrentSlide(index);
      }
-}
+};
 
 // 2б. Функция проверяет, является ли слайд первым. Если да, то пролистывание назад начинается с самого конца
 const prevSlide = () => {
@@ -49,7 +49,7 @@ const prevSlide = () => {
         index--;
         prepareCurrentSlide(index);
      }
-}
+};
 
 // 5. Функция переключает слайдер при нажатии на произвольную навигационную точку
 dots.forEach((item, indexDot) => {
@@ -57,7 +57,7 @@ dots.forEach((item, indexDot) => {
         index = indexDot;
         prepareCurrentSlide(index);
     })
-})
+});
 
 // 1. Обработчики событий срабатывают при нажатии на соответствующую кнопку
 next.addEventListener('click', nextSlide);

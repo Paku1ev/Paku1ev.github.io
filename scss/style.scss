@@ -98,7 +98,9 @@ header {
     }
 
     .header-center{
+        display: flex;
         align-self: center;
+        justify-content: center;
         img {
             height: 40px;
         }

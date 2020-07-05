@@ -103,6 +103,10 @@ body {
     background-color: $darkBlue;
 }
 
+.customers-container {
+    background-color: $white_orgn;
+}
+
 /* Шапка */
 .header__bar-img {
     display: none;
@@ -398,7 +402,7 @@ nav {
 
 //Секция "Наши клиенты"
 .customers {
-    background-color: $white_orgn;
+    @include adaptConteiner;
     padding: $padding;
     h2 {
         @include headline;
@@ -406,12 +410,12 @@ nav {
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 2rem;
         align-items: center;
         justify-items: center;
         img {
-            max-width: 240px;
-            max-height: 130px;
+            max-width: 24rem;
+            max-height: 13rem;
         }
     }
 }

@@ -53,6 +53,10 @@
     .portfolio {
         display: none;
     }
+    //Секция "Наши клиенты"
+    .customers__items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 650px) { //700
@@ -88,6 +92,9 @@
                 font-size: 1.9rem;
             }
         }
+    }
+    .customers__items {
+        grid-template-columns: 1fr 1fr;
     }
 }
 

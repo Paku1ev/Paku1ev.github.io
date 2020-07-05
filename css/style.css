@@ -42,6 +42,10 @@ body {
   background-color: #161D23;
 }
 
+.customers-container {
+  background-color: #fff;
+}
+
 /* Шапка */
 .header__bar-img {
   display: none;
@@ -482,7 +486,8 @@ nav a:hover {
 }
 
 .customers {
-  background-color: #fff;
+  max-width: 114rem;
+  margin: 0 auto;
   padding: 11rem 0 11rem 0;
 }
 
@@ -497,7 +502,7 @@ nav a:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -505,8 +510,8 @@ nav a:hover {
 }
 
 .customers__items img {
-  max-width: 240px;
-  max-height: 130px;
+  max-width: 24rem;
+  max-height: 13rem;
 }
 
 .map {

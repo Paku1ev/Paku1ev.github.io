@@ -46,6 +46,10 @@ body {
   background-color: #fff;
 }
 
+.map-container {
+  background-color: #161D23;
+}
+
 /* Шапка */
 .header__bar-img {
   display: none;
@@ -515,9 +519,11 @@ nav a:hover {
 }
 
 .map {
-  padding: 50px 0 50px 0;
-  background-color: #161D23;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 5rem 0 5rem 0;
   text-align: center;
+  width: 1000px;
 }
 
 .form {

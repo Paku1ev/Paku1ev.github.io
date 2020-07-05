@@ -57,6 +57,10 @@
     .customers__items {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    //Секция "Карта"
+    .map {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) { //700

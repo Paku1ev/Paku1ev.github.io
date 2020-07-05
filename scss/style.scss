@@ -107,6 +107,10 @@ body {
     background-color: $white_orgn;
 }
 
+.map-container {
+    background-color: $darkBlue;
+}
+
 /* Шапка */
 .header__bar-img {
     display: none;
@@ -422,9 +426,10 @@ nav {
 
 //Карта
 .map {
-    padding: 50px 0 50px 0;
-    background-color: $darkBlue;
+    @include adaptConteiner;
+    padding: 5rem 0 5rem 0;
     text-align: center;
+    width: 1000px;
 }
 
 // Форма заявки

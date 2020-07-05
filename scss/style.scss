@@ -99,6 +99,10 @@ body {
     background-color: $white;
 }
 
+.portfolio-container {
+    background-color: $darkBlue;
+}
+
 /* Шапка */
 .header__bar-img {
     display: none;
@@ -312,8 +316,8 @@ nav {
 
 //Секция "Наши работы"
 .portfolio {
-    background-color: $darkBlue;
     padding: $padding;
+    @include adaptConteiner;
     h2 {
         @include headline();
         color: $white_orgn;
@@ -347,8 +351,8 @@ nav {
             display: none;
             img{
                 border-radius: 10px;
-                width: 840px;
-                height: 480px;
+                width: 84rem;
+                height: 48rem;
             }
         }
         .portfolio__slide.active {
@@ -363,7 +367,7 @@ nav {
             margin: 0 8px 0 8px;
             border-radius: 50%;
             cursor: pointer;
-            margin-top: 30px;
+            margin-top: 3rem;
             width: 10px;
             height: 10px;
             transition: 0.3s;
@@ -379,8 +383,8 @@ nav {
         display: flex;
         justify-content: center;
         width: 60%;
-        padding: 20px 30px 20px 30px;
-        margin: 65px auto 0 auto;
+        padding: 2rem 3rem 2rem 3rem;
+        margin: 6.5rem auto 0 auto;
         text-decoration: none;
         border-radius: 5px;
         background-color: $orange;

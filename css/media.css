@@ -14,6 +14,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  html {
+    font-size: 8px;
+  }
   .header__bar-img {
     display: block;
     position: fixed;
@@ -40,11 +43,14 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .portfolio {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 650px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
   .cover__content h1 {
     font-size: 3rem;
@@ -81,7 +87,7 @@
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
   .stats {
     display: -webkit-box;

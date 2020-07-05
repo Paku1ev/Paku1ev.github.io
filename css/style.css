@@ -38,6 +38,10 @@ body {
   background-color: #F7F7F7;
 }
 
+.portfolio-container {
+  background-color: #161D23;
+}
+
 /* Шапка */
 .header__bar-img {
   display: none;
@@ -362,8 +366,9 @@ nav a:hover {
 }
 
 .portfolio {
-  background-color: #161D23;
   padding: 11rem 0 11rem 0;
+  max-width: 114rem;
+  margin: 0 auto;
 }
 
 .portfolio h2 {
@@ -417,8 +422,8 @@ nav a:hover {
 
 .portfolio .portfolio__slider .portfolio__slide img {
   border-radius: 10px;
-  width: 840px;
-  height: 480px;
+  width: 84rem;
+  height: 48rem;
 }
 
 .portfolio .portfolio__slider .portfolio__slide.active {
@@ -439,7 +444,7 @@ nav a:hover {
   margin: 0 8px 0 8px;
   border-radius: 50%;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 3rem;
   width: 10px;
   height: 10px;
   -webkit-transition: 0.3s;
@@ -462,8 +467,8 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 60%;
-  padding: 20px 30px 20px 30px;
-  margin: 65px auto 0 auto;
+  padding: 2rem 3rem 2rem 3rem;
+  margin: 6.5rem auto 0 auto;
   text-decoration: none;
   border-radius: 5px;
   background-color: #CA6E1B;

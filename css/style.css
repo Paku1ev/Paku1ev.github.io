@@ -5,11 +5,15 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .header-container {
@@ -33,15 +37,14 @@ body {
 /* Шапка */
 .header__bar-img {
   display: none;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 header {
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
-  width: 100%;
-  padding-top: 10px;
+  padding-top: 1rem;
   background-color: #F7F7F7;
   display: -ms-grid;
   display: grid;
@@ -50,17 +53,17 @@ header {
 }
 
 header img:not(.header-logo) {
-  height: 25px;
+  height: 2.5rem;
   float: left;
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 header .header-item-adress {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 header .header-item-adress img {
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 header .header-item-adress .header-item-span-1 {
@@ -68,7 +71,7 @@ header .header-item-adress .header-item-span-1 {
 }
 
 header .header-item-adress .header-item-span-2 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 header .header-item-datetime {
@@ -92,7 +95,7 @@ header .header-center {
 }
 
 header .header-center img {
-  height: 40px;
+  height: 4rem;
 }
 
 header .header-right {
@@ -109,7 +112,7 @@ header .header-right {
 }
 
 header .header-right .header-right-info {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,11 +125,11 @@ header .header-right .header-right-info {
 }
 
 header .header-right .header-right-info:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 header .header-right span {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 nav {
@@ -136,14 +139,13 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
-  width: 100%;
 }
 
 nav a {
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 1rem 1rem;
   font-weight: bold;
   color: #000;
 }
@@ -159,10 +161,9 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
-  width: 100%;
-  min-height: 650px;
+  min-height: 65rem;
   color: #fff;
 }
 
@@ -171,20 +172,20 @@ nav a:hover {
 }
 
 .cover h1 {
-  font-size: 46px;
+  font-size: 4.6rem;
   text-align: center;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.4rem;
 }
 
 .cover h2 {
   text-align: center;
   font-weight: normal;
-  margin: 40px 0 40px 0;
+  margin: 4rem 0 4rem 0;
 }
 
 .cover .cover__buttons {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 4rem;
   text-decoration: none;
 }
 
@@ -235,13 +236,13 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px 0;
+  padding: 5rem 0;
   background-color: #F7F7F7;
 }
 
 .stats__item {
   text-align: center;
-  margin: 0 50px;
+  margin: 0 5rem;
 }
 
 .stats__item span {
@@ -255,17 +256,16 @@ nav a:hover {
 }
 
 .services {
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
-  width: 100%;
-  padding: 110px 0 110px 0;
+  padding: 11rem 0 11rem 0;
   background-color: #161D23;
   color: #fff;
 }
 
 .services h2 {
-  margin: 0 0 35px 0;
-  font-size: 40px;
+  margin: 0 0 3.5rem 0;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -275,8 +275,8 @@ nav a:hover {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
-  grid-row-gap: 40px;
-  grid-column-gap: 90px;
+  grid-row-gap: 4rem;
+  grid-column-gap: 9rem;
 }
 
 .services__items__item {
@@ -289,22 +289,22 @@ nav a:hover {
 }
 
 .services__items__item img {
-  width: 60px;
-  margin-right: 15px;
+  width: 6rem;
+  margin-right: 1.5rem;
 }
 
 .services__items__item p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .advantages {
-  padding: 110px 0 110px 0;
+  padding: 11rem 0 11rem 0;
   background-color: #F7F7F7;
 }
 
 .advantages h2 {
-  margin: 0 0 35px 0;
-  font-size: 40px;
+  margin: 0 0 3.5rem 0;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -358,12 +358,12 @@ nav a:hover {
 
 .portfolio {
   background-color: #161D23;
-  padding: 110px 0 110px 0;
+  padding: 11rem 0 11rem 0;
 }
 
 .portfolio h2 {
-  margin: 0 0 35px 0;
-  font-size: 40px;
+  margin: 0 0 3.5rem 0;
+  font-size: 4rem;
   text-align: center;
   color: #fff;
 }
@@ -473,12 +473,12 @@ nav a:hover {
 
 .customers {
   background-color: #fff;
-  padding: 110px 0 110px 0;
+  padding: 11rem 0 11rem 0;
 }
 
 .customers h2 {
-  margin: 0 0 35px 0;
-  font-size: 40px;
+  margin: 0 0 3.5rem 0;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -506,7 +506,7 @@ nav a:hover {
 }
 
 .form {
-  padding: 110px 0 110px 0;
+  padding: 11rem 0 11rem 0;
   display: -ms-grid;
   display: grid;
   grid-row-gap: 25px;

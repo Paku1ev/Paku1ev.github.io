@@ -1,13 +1,16 @@
 @media screen and (max-width: 1200px) { // 1100
+    html {
+        font-size: 9px;
+    }
     //Шапка
     header {
-        max-width: 860px;
+        max-width: 94rem;
         grid-template-columns: 1fr 1fr 1fr;
     }
     //Секция "Наши услуги"
     .services__items {
-        grid-row-gap: 30px;
-        grid-column-gap: 20px;
+        grid-row-gap: 3rem;
+        grid-column-gap: 2rem;
     }
 }
 
@@ -16,7 +19,7 @@
     .header__bar-img {
         display: block;
         position: fixed;
-        left: 10px;
+        right: 10px;
         top: 10px;
     }
     header {
@@ -29,24 +32,27 @@
     //Обложка
     .cover__content {
         h1 {
-            font-size: 36px;
+            font-size: 3.6rem;
         }
     }
     //Секция "Наши услуги"
     .services__items {
-        grid-template-columns: 550px;
+        grid-template-columns: 55rem;
         justify-content: center;
     }
 }
 
 @media screen and (max-width: 650px) { //700
+    html {
+        font-size: 8px;
+    }
     //Обложка
     .cover__content {
         h1 {
-            font-size: 30px;
+            font-size: 3rem;
         }
         h2 {
-            font-size: 22px;
+            font-size: 2.2rem;
         }
     }
     .cover__buttons {
@@ -56,22 +62,25 @@
     }
     //Статистика компании
     .stats__item {
-        margin: 0 20px;
+        margin: 0 2rem;
     }
     .services__items {
         grid-template-columns: 1fr;
         &__item {
             img {
-                width: 45px;
+                width: 4.8rem;
             }
             p {
-                font-size: 16px;
+                font-size: 1.9rem;
             }
         }
     }
 }
 
 @media screen and (max-width: 480px) {
+    html {
+        font-size: 7px;
+    }
     //Статистика компании
     .stats {
         display: flex;

@@ -95,6 +95,10 @@ body {
     background-color: $darkBlue;
 }
 
+.advantages-container {
+    background-color: $white;
+}
+
 /* Шапка */
 .header__bar-img {
     display: none;
@@ -269,7 +273,7 @@ nav {
 //Секция "Наши преимущества"
 .advantages {
     padding: $padding;
-    background-color: $white;
+    @include adaptConteiner;
     h2 {
         @include headline;
     }
@@ -277,26 +281,26 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-row-gap: 40px;
-        grid-column-gap: 30px;
+        grid-row-gap: 4rem;
+        grid-column-gap: 3rem;
         &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
             border-radius: 7px;
-            padding: 15px;
+            padding: 1.5rem;
             &:hover {
                 transition: 0.4s;
-                box-shadow: 0 0 25px $black_orgn;
+                box-shadow: 0 0 2.5rem $black_orgn;
 
             }
             img {
-                width: 150px;
+                width: 15rem;
             }
             span {
-                font-size: 26px;
+                font-size: 2.6rem;
                 font-weight: bold;
-                margin: 25px 0 25px 0;
+                margin: 2.5rem 0 2.5rem 0;
             }
             p {
                 margin: 0;

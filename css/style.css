@@ -34,6 +34,10 @@ body {
   background-color: #161D23;
 }
 
+.advantages-container {
+  background-color: #F7F7F7;
+}
+
 /* Шапка */
 .header__bar-img {
   display: none;
@@ -246,13 +250,13 @@ nav a:hover {
 }
 
 .stats__item span {
-  font-size: 64px;
+  font-size: 6.4rem;
   color: #CA6E1B;
   font-weight: bold;
 }
 
 .stats__item p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .services {
@@ -299,7 +303,8 @@ nav a:hover {
 
 .advantages {
   padding: 11rem 0 11rem 0;
-  background-color: #F7F7F7;
+  max-width: 114rem;
+  margin: 0 auto;
 }
 
 .advantages h2 {
@@ -315,8 +320,8 @@ nav a:hover {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-row-gap: 40px;
-  grid-column-gap: 30px;
+  grid-row-gap: 4rem;
+  grid-column-gap: 3rem;
 }
 
 .advantages__items__item {
@@ -331,24 +336,24 @@ nav a:hover {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 7px;
-  padding: 15px;
+  padding: 1.5rem;
 }
 
 .advantages__items__item:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-box-shadow: 0 0 25px #000;
-          box-shadow: 0 0 25px #000;
+  -webkit-box-shadow: 0 0 2.5rem #000;
+          box-shadow: 0 0 2.5rem #000;
 }
 
 .advantages__items__item img {
-  width: 150px;
+  width: 15rem;
 }
 
 .advantages__items__item span {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin: 25px 0 25px 0;
+  margin: 2.5rem 0 2.5rem 0;
 }
 
 .advantages__items__item p {

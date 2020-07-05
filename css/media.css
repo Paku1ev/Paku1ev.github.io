@@ -36,6 +36,10 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .advantages__items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -87,6 +91,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .advantages__items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=media.css.map */

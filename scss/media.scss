@@ -40,6 +40,12 @@
         grid-template-columns: 55rem;
         justify-content: center;
     }
+    //Секция "Наши преимущества"
+    .advantages {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 @media screen and (max-width: 650px) { //700
@@ -64,6 +70,7 @@
     .stats__item {
         margin: 0 2rem;
     }
+    //Секция "Наши услуги"
     .services__items {
         grid-template-columns: 1fr;
         &__item {
@@ -85,5 +92,11 @@
     .stats {
         display: flex;
         flex-direction: column;
+    }
+    //Секция "Наши преимущества"
+    .advantages {
+        &__items {
+            grid-template-columns: 1fr;
+        }
     }
 }

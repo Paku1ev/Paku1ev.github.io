@@ -50,6 +50,10 @@ body {
   background-color: #161D23;
 }
 
+.form-container {
+  background-color: #fff;
+}
+
 /* Шапка */
 .header__bar-img {
   display: none;
@@ -527,19 +531,21 @@ nav a:hover {
 }
 
 .form {
+  max-width: 114rem;
+  margin: 0 auto;
   padding: 11rem 0 11rem 0;
   display: -ms-grid;
   display: grid;
-  grid-row-gap: 25px;
+  grid-row-gap: 2.5rem;
 }
 
 .form__message {
   -ms-grid-column-align: center;
       justify-self: center;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
-  width: 650px;
+  max-width: 65rem;
 }
 
 .form form {
@@ -549,8 +555,9 @@ nav a:hover {
 
 .form form .form_form {
   height: 45px;
-  width: 650px;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .form form .form__btn {
@@ -558,7 +565,7 @@ nav a:hover {
 }
 
 .form form .form__button {
-  padding: 15px 30px 15px 30px;
+  padding: 1.5rem 3.0rem 1.5rem 3.0rem;
   font-size: 16px;
   color: #fff;
   background-color: #CA6E1B;
@@ -573,8 +580,8 @@ nav a:hover {
 
 .form form p {
   text-align: center;
-  margin-top: 30px;
-  font-size: 14px;
+  margin-top: 3rem;
+  font-size: 1.4rem;
 }
 
 footer {

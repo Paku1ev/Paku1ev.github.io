@@ -115,6 +115,11 @@ body {
     background-color: $white_orgn;
 }
 
+
+.footer-container {
+    background-color: $black_orgn;
+}
+
 /* Шапка */
 .header__bar-img {
     display: none;
@@ -483,7 +488,7 @@ nav {
 //Подвал
 footer {
     padding: 50px 150px 50px 150px;
-    background-color: $black_orgn;
+    @include adaptConteiner;
     color: $white_orgn;
     .footer__container {
         display: flex;

@@ -43,6 +43,10 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .advantages__items__item:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .portfolio {
     display: none;
   }

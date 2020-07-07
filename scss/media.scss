@@ -47,6 +47,11 @@
     .advantages {
         &__items {
             grid-template-columns: 1fr 1fr;
+            &__item {
+                &:hover {
+                    box-shadow: none;
+                }
+            }
         }
     }
     //Секция "Наши работы"

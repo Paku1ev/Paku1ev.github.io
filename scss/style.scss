@@ -267,6 +267,7 @@ nav {
         text-decoration: none;
         .cover__buttons__btn-1 {
             @include button($yellow);
+            display: inline-block;
             cursor: pointer;
         }
         .cover__buttons__btn-2 {

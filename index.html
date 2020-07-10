@@ -77,7 +77,7 @@
                 <h1>Изготовление всех видов наружной,<br> внутренней рекламы и металлоконструкций</h1>
                 <h2>Делаем проекты любой сложности в Иркутской области и Улан-Удэ</h2>
                 <div class="cover__buttons" >
-                    <a class="cover__buttons__btn-1" href="#">Заказать услуги</a>
+                    <div class="cover__buttons__btn-1" href="#">Заказать услуги</div>
                     <div class="cover__buttons__btn-2">Посмотреть работы</div>
                 </div>
             </div>
@@ -382,23 +382,29 @@
 
     <!-- Плавный скролл до секции N ("Наши работы") -->
     <script>
+        const btnPortfolio = document.querySelector('.cover__buttons__btn-2')
         const portfolio = document.querySelector('.portfolio')
-        //console.log(portfolio)
-        const btn = document.querySelector('.cover__buttons__btn-2')
-        //console.log(btn)
+        
+        const btnForm = document.querySelector('.cover__buttons__btn-1')
+        const form = document.querySelector('.form')
 
-        const scrollTo = elem => {
+        scrollToDiv(btnPortfolio, portfolio);
+        scrollToDiv(btnForm, form);
+
+        function scrollToDiv(btn, div) {
+
+            const scrollTo = elem => {
             window.scroll({
                 left: 0,
                 top: elem.offsetTop,
                 behavior: 'smooth'
             });
-        }
+            }
 
-        btn.addEventListener('click', () => {
-            //console.log('TEST');
-            scrollTo(portfolio);
-        })
+            btn.addEventListener('click', () => {
+            scrollTo(div);
+        });
+        }
     </script>
 
     <script src="js/slider.js"></script>

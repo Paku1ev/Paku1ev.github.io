@@ -1,1 +1,124 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+  header {
+    max-width: 94rem;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .services__items {
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 8px;
+  }
+  .header__bar-img {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+  }
+  header {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .cover__content h1 {
+    font-size: 3.6rem;
+  }
+  .services__items {
+    -ms-grid-columns: 55rem;
+        grid-template-columns: 55rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages__items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .advantages__items__item:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .portfolio {
+    display: none;
+  }
+  .customers__items {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .map {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 7px;
+  }
+  .cover__content h1 {
+    font-size: 3rem;
+  }
+  .cover__content h2 {
+    font-size: 2.2rem;
+  }
+  .cover__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stats__item {
+    margin: 0 2rem;
+  }
+  .services__items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .services__items__item img {
+    width: 4.8rem;
+  }
+  .services__items__item p {
+    font-size: 1.9rem;
+  }
+  .customers__items {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages__items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=media.css.map */

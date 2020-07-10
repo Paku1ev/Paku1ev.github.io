@@ -1,3 +1,12 @@
+/* Стандартные настройки */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
 //Переменные
 $white: #F7F7F7;
 $orange: #CA6E1B;
@@ -9,7 +18,15 @@ $white_orgn: #fff;
 
 $font: 'Roboto', sans-serif;
 
-$padding: 110px 150px 110px 150px; //Здесь заданы поля по бокам
+$padding: 11rem 0 11rem 0; //Здесь заданы поля по бокам
+
+//Общие настройки
+body {
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
 
 //Миксины
 //Основная кнопка
@@ -31,7 +48,7 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
 //Второстепенная кнопка
 @mixin button_2 {
     padding: 18px 30px;
-    margin: 0 10px;
+    margin: 10px 10px 0;
     color: $white_orgn;
     font-size: 16px;
     font-weight: bold;
@@ -47,40 +64,85 @@ $padding: 110px 150px 110px 150px; //Здесь заданы поля по бо�
 }
 //Заголовок 2 уровня
 @mixin headline {
-    margin: 0 0 35px 0;
-    font-size: 40px;
+    margin: 0 0 3.5rem 0;
+    font-size: 4rem;
     text-align: center;
 }
 
-/* Стандартные настройки */
-*, *:before, *:after {
-    box-sizing: border-box;
+//Адаптивный контейнер
+@mixin adaptConteiner {
+    max-width: 114rem;
+    margin: 0 auto;
+    //width: 100%;
 }
 
-body {
-    font-family: $font;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+//Адаптивные контейнеры (Нужны для заполнения фона и т.п)
+.header-container {
+    background-color: $white;
+}
+
+.nav-container {
+    background-color: $white;
+}
+
+.cover-container {
+    background-image: url(../img/bg-cover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.services-container {
+    background-color: $darkBlue;
+}
+
+.advantages-container {
+    background-color: $white;
+}
+
+.portfolio-container {
+    background-color: $darkBlue;
+}
+
+.customers-container {
+    background-color: $white_orgn;
+}
+
+.map-container {
+    background-color: $darkBlue;
+}
+
+.form-container {
+    background-color: $white_orgn;
+}
+
+
+.footer-container {
+    background-color: $black_orgn;
 }
 
 /* Шапка */
+.header__bar-img {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
 header {
-    padding: 15px 150px 15px 150px;
+    @include adaptConteiner;
+    padding-top: 1rem;
     background-color: $white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 
     img:not(.header-logo) {
-        height: 25px;
+        height: 2.5rem;
         float: left;
-        margin-right: 5px;
+        margin-right: 0.5rem;
     }
 
     .header-item-adress {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
         img {
-            margin-top: 5px;
+            margin-top: 0.5rem;
         }
 
         .header-item-span-1 {
@@ -88,7 +150,7 @@ header {
         }
 
         .header-item-span-2 {
-            font-size: 0.8rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -102,7 +164,7 @@ header {
         align-self: center;
         justify-content: center;
         img {
-            height: 40px;
+            height: 4rem;
         }
 
     }
@@ -112,28 +174,28 @@ header {
         flex-direction: column;
         justify-content: flex-end;
         .header-right-info {
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
             display: flex;
             justify-content: flex-end;
             align-items: center;
         }
         .header-right-info:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
         span {
-            margin-right: 10px;
+            margin-right: 1rem;
         }
     }
 }
 
 //Навигация
 nav {
-    background-color: $white;
     display: flex;
     justify-content: center;
+    @include adaptConteiner;
     a {
         text-decoration: none;
-        padding: 10px 10px;
+        padding: 1rem 1rem;
         font-weight: bold;
         color: $black_orgn;
     }
@@ -147,28 +209,26 @@ nav {
 //Обложка
 .cover {
     display: flex;
-    min-height: 650px;
+    @include adaptConteiner;
+    min-height: 65rem;
     color: $white_orgn;
-    background-image: url(../img/bg-cover.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     .cover__content {
         margin: auto; //Работает, если у родителя FlexBox
     }
     h1 {
-        font-size: 46px;
+        font-size: 4.6rem;
         text-align: center;
-        margin: 0 0 1.5rem;
+        margin: 0 0 1.4rem;
 
     }
     h2 {
         text-align: center;
         font-weight: normal;
-        margin: 40px 0 40px 0;
+        margin: 4rem 0 4rem 0;
     }
     .cover__buttons {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 4rem;
         text-decoration: none;
         .cover__buttons__btn-1 {
             @include button($yellow);
@@ -186,24 +246,25 @@ nav {
 .stats {
     display: flex;
     justify-content: center;
-    min-height: 300px;
+    padding: 5rem 0;
     background-color: $white;
     &__item {
         text-align: center;
-        margin: auto 50px auto 50px;
+        margin: 0 5rem;
         span {
-            font-size: 64px;
+            font-size: 6.4rem;
             color: $orange;
             font-weight: bold;
         }
         p {
-            font-size: 20px;
+            font-size: 2rem;
         }
     }
 }
 
 //Секция "Наши услуги"
 .services {
+    @include adaptConteiner;
     padding: $padding;
     background-color: $darkBlue;
     color: $white_orgn;
@@ -213,19 +274,18 @@ nav {
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-flow: column;
-        grid-row-gap: 40px;
-        grid-column-gap: 110px;
+        grid-auto-flow: row;
+        grid-row-gap: 4rem;
+        grid-column-gap: 9rem;
         &__item {
             display: flex;
             align-items: center;
             img {
-                width: 60px;
-                margin-right: 15px;
+                width: 6rem;
+                margin-right: 1.5rem;
             }
             p {
-                font-size: 20px;
+                font-size: 2rem;
             }
         }
     }
@@ -234,7 +294,7 @@ nav {
 //Секция "Наши преимущества"
 .advantages {
     padding: $padding;
-    background-color: $white;
+    @include adaptConteiner;
     h2 {
         @include headline;
     }
@@ -242,26 +302,26 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-row-gap: 40px;
-        grid-column-gap: 30px;
+        grid-row-gap: 4rem;
+        grid-column-gap: 3rem;
         &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
             border-radius: 7px;
-            padding: 15px;
+            padding: 1.5rem;
             &:hover {
                 transition: 0.4s;
-                box-shadow: 0 0 25px $black_orgn;
+                box-shadow: 0 0 2.5rem $black_orgn;
 
             }
             img {
-                width: 150px;
+                width: 15rem;
             }
             span {
-                font-size: 26px;
+                font-size: 2.6rem;
                 font-weight: bold;
-                margin: 25px 0 25px 0;
+                margin: 2.5rem 0 2.5rem 0;
             }
             p {
                 margin: 0;
@@ -273,8 +333,8 @@ nav {
 
 //Секция "Наши работы"
 .portfolio {
-    background-color: $darkBlue;
     padding: $padding;
+    @include adaptConteiner;
     h2 {
         @include headline();
         color: $white_orgn;
@@ -308,8 +368,8 @@ nav {
             display: none;
             img{
                 border-radius: 10px;
-                width: 840px;
-                height: 480px;
+                width: 84rem;
+                height: 48rem;
             }
         }
         .portfolio__slide.active {
@@ -324,7 +384,7 @@ nav {
             margin: 0 8px 0 8px;
             border-radius: 50%;
             cursor: pointer;
-            margin-top: 30px;
+            margin-top: 3rem;
             width: 10px;
             height: 10px;
             transition: 0.3s;
@@ -340,8 +400,8 @@ nav {
         display: flex;
         justify-content: center;
         width: 60%;
-        padding: 20px 30px 20px 30px;
-        margin: 65px auto 0 auto;
+        padding: 2rem 3rem 2rem 3rem;
+        margin: 6.5rem auto 0 auto;
         text-decoration: none;
         border-radius: 5px;
         background-color: $orange;
@@ -355,7 +415,7 @@ nav {
 
 //Секция "Наши клиенты"
 .customers {
-    background-color: $white_orgn;
+    @include adaptConteiner;
     padding: $padding;
     h2 {
         @include headline;
@@ -363,41 +423,43 @@ nav {
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 2rem;
         align-items: center;
         justify-items: center;
         img {
-            max-width: 240px;
-            max-height: 130px;
+            max-width: 24rem;
+            max-height: 13rem;
         }
     }
 }
 
 //Карта
 .map {
-    padding: 50px 0 50px 0;
-    background-color: $darkBlue;
+    @include adaptConteiner;
+    padding: 5rem 0 5rem 0;
     text-align: center;
+    width: 1000px;
 }
 
 // Форма заявки
 .form {
+    @include adaptConteiner;
     padding: $padding;
     display: grid;
-    grid-row-gap: 25px;
+    grid-row-gap: 2.5rem;
     &__message {
         justify-self: center;
-        font-size: 22px;
+        font-size: 2.2rem;
         font-weight: bold;
         text-align: center;
-        width: 650px;
+        max-width: 65rem;
     }
     form {
         justify-self: center;
         .form_form {
             height: 45px;
-            width: 650px;
-            margin-bottom: 20px;
+            width: 100%;
+            margin-bottom: 2rem;
         }
 
         .form__btn {
@@ -405,7 +467,7 @@ nav {
         }
 
         .form__button {
-            padding: 15px 30px 15px 30px;
+            padding: 1.5rem 3.0rem 1.5rem 3.0rem;
             font-size: 16px;
             color: $white_orgn;
             background-color: $orange;
@@ -417,8 +479,8 @@ nav {
         }
         p {
             text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
+            margin-top: 3rem;
+            font-size: 1.4rem;
         }
     }
 }
@@ -426,7 +488,7 @@ nav {
 //Подвал
 footer {
     padding: 50px 150px 50px 150px;
-    background-color: $black_orgn;
+    @include adaptConteiner;
     color: $white_orgn;
     .footer__container {
         display: flex;

@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* Стандартные настройки */
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -70,10 +69,8 @@ header {
   margin: 0 auto;
   padding-top: 1rem;
   background-color: #F7F7F7;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 header img:not(.header-logo) {
@@ -99,23 +96,14 @@ header .header-item-adress .header-item-span-2 {
 }
 
 header .header-item-datetime {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 header .header-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-self: center;
+  justify-content: center;
 }
 
 header .header-center img {
@@ -123,29 +111,16 @@ header .header-center img {
 }
 
 header .header-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 header .header-right .header-right-info {
   margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 header .header-right .header-right-info:last-child {
@@ -157,33 +132,64 @@ header .header-right span {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   max-width: 114rem;
   margin: 0 auto;
+  /*При наведении на пункт меню
+    появляется подменю (если оно есть)*/
 }
 
-nav a {
+nav .nav-1-lvl {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav .nav-2-lvl {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+}
+
+nav .nav-2-lvl li {
+  border-top: 1px solid #000;
+}
+
+nav .nav-2-lvl li:first-child {
+  border: none;
+}
+
+nav .nav-2-lvl li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  text-transform: none;
+  color: #000;
+  background-color: #F7F7F7;
+}
+
+nav .nav-1-lvl li:hover > ul {
+  display: block;
+}
+
+nav .nav-link {
+  display: block;
   text-decoration: none;
   padding: 1rem 1rem;
   font-weight: bold;
   color: #000;
 }
 
-nav a:hover {
+nav .nav-link:hover {
   background-color: #000;
   color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .cover {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 114rem;
   margin: 0 auto;
@@ -223,7 +229,6 @@ nav a:hover {
   text-decoration: none;
   border-radius: 30px;
   border: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -241,7 +246,6 @@ nav a:hover {
   border-radius: 30px;
   border: solid #F7BA08 2px;
   text-decoration: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   display: inline-block;
   cursor: pointer;
@@ -254,12 +258,8 @@ nav a:hover {
 }
 
 .stats {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 5rem 0;
   background-color: #F7F7F7;
 }
@@ -294,22 +294,16 @@ nav a:hover {
 }
 
 .services__items {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
   grid-row-gap: 4rem;
   grid-column-gap: 9rem;
 }
 
 .services__items__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .services__items__item img {
@@ -334,36 +328,24 @@ nav a:hover {
 }
 
 .advantages__items {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-row-gap: 4rem;
   grid-column-gap: 3rem;
 }
 
 .advantages__items__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   border-radius: 7px;
   padding: 1.5rem;
 }
 
 .advantages__items__item:hover {
-  -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-box-shadow: 0 0 2.5rem #000;
-          box-shadow: 0 0 2.5rem #000;
+  box-shadow: 0 0 2.5rem #000;
 }
 
 .advantages__items__item img {
@@ -395,29 +377,21 @@ nav a:hover {
 }
 
 .portfolio .portfolio__slider {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   position: relative;
 }
 
 .portfolio .portfolio__slider #btn__prev, .portfolio .portfolio__slider #btn__next {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #CA6E1B;
   border-radius: 50%;
   cursor: pointer;
   width: 50px;
   height: 50px;
   justify-self: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-transition: 0.3s;
+  align-self: center;
   transition: 0.3s;
 }
 
@@ -447,12 +421,8 @@ nav a:hover {
 }
 
 .portfolio .portfolio__dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .portfolio .portfolio__dots .portfolio__dot {
@@ -463,7 +433,6 @@ nav a:hover {
   margin-top: 3rem;
   width: 10px;
   height: 10px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -476,12 +445,8 @@ nav a:hover {
 }
 
 .portfolio .portfolio__look-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 60%;
   padding: 2rem 3rem 2rem 3rem;
   margin: 6.5rem auto 0 auto;
@@ -489,7 +454,6 @@ nav a:hover {
   border-radius: 5px;
   background-color: #CA6E1B;
   color: #fff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -510,14 +474,10 @@ nav a:hover {
 }
 
 .customers__items {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-items: center;
 }
 
@@ -538,14 +498,12 @@ nav a:hover {
   max-width: 114rem;
   margin: 0 auto;
   padding: 11rem 0 11rem 0;
-  display: -ms-grid;
   display: grid;
   grid-row-gap: 2.5rem;
 }
 
 .form__message {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
@@ -553,8 +511,7 @@ nav a:hover {
 }
 
 .form form {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .form form .form_form {
@@ -573,7 +530,6 @@ nav a:hover {
   color: #fff;
   background-color: #CA6E1B;
   border: none;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -595,15 +551,9 @@ footer {
 }
 
 footer .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer .footer__container .footer__left p {

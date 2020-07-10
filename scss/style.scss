@@ -193,16 +193,51 @@ nav {
     display: flex;
     justify-content: center;
     @include adaptConteiner;
-    a {
+
+    .nav-1-lvl {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .nav-2-lvl {
+        display: none;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        li {
+            border-top: 1px solid $black_orgn;
+            &:first-child {
+                border: none;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 1rem 1rem;
+                font-weight: bold;
+                text-transform: none;
+                color: $black_orgn;
+                background-color: $white;
+            }
+        }
+    }
+
+    /*При наведении на пункт меню
+    появляется подменю (если оно есть)*/
+    .nav-1-lvl li:hover > ul {
+        display: block;
+    }
+
+    .nav-link {
+        display: block;
         text-decoration: none;
         padding: 1rem 1rem;
         font-weight: bold;
         color: $black_orgn;
-    }
-    a:hover {
-        background-color: $black_orgn;
-        color: $white_orgn;
-        transition: 0.5s;
+        &:hover {
+            background-color: $black_orgn;
+            color: $white_orgn;
+            transition: 0.3s;
+        }
     }
 }
 

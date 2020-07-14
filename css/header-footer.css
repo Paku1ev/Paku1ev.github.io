@@ -178,6 +178,7 @@ nav .nav-1-lvl li:hover > ul {
 nav .nav-link {
   display: block;
   text-decoration: none;
+  cursor: pointer;
   padding: 1rem 1rem;
   font-weight: bold;
   color: #000;

@@ -31,6 +31,9 @@
   .cover__content h1 {
     font-size: 3.6rem;
   }
+  .cover__content .cover__buttons .cover__buttons__btn-2 {
+    display: none;
+  }
   .services__items {
     grid-template-columns: 55rem;
     justify-content: center;

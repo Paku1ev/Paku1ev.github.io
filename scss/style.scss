@@ -1,3 +1,247 @@
+/* Стандартные настройки */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+//Переменные
+$white: #F7F7F7;
+$orange: #CA6E1B;
+$yellow: #F7BA08;
+$darkBlue: #161D23;
+
+$black_orgn: #000;
+$white_orgn: #fff;
+
+$font: 'Roboto', sans-serif;
+
+$padding: 11rem 0 11rem 0; //Здесь заданы поля по бокам
+
+//Общие настройки
+body {
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+//Миксины
+//Основная кнопка
+@mixin button($color) {
+    padding: 20px 30px;
+    margin: 0 10px;
+    color: $white_orgn;
+    background-color: $color;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+    &:hover {
+        background-color: darken($color, 20%);
+    }
+}
+//Второстепенная кнопка
+@mixin button_2 {
+    padding: 18px 30px;
+    margin: 10px 10px 0;
+    color: $white_orgn;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: solid $yellow 2px;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+        background-color: $white_orgn;
+        border: solid $white_orgn 2px;
+        color: $black_orgn;
+    }
+}
+//Заголовок 2 уровня
+@mixin headline {
+    margin: 0 0 3.5rem 0;
+    font-size: 4rem;
+    text-align: center;
+}
+
+//Адаптивный контейнер
+@mixin adaptConteiner {
+    max-width: 114rem;
+    margin: 0 auto;
+    //width: 100%;
+}
+
+//Адаптивные контейнеры (Нужны для заполнения фона и т.п)
+.header-container {
+    background-color: $white;
+}
+
+.nav-container {
+    background-color: $white;
+}
+
+.cover-container {
+    background-image: url(../img/bg-cover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.services-container {
+    background-color: $darkBlue;
+}
+
+.advantages-container {
+    background-color: $white;
+}
+
+.portfolio-container {
+    background-color: $darkBlue;
+}
+
+.customers-container {
+    background-color: $white_orgn;
+}
+
+.map-container {
+    background-color: $darkBlue;
+}
+
+.form-container {
+    background-color: $white_orgn;
+}
+
+
+.footer-container {
+    background-color: $black_orgn;
+}
+
+/* Шапка */
+.header__bar-img {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+header {
+    @include adaptConteiner;
+    padding-top: 1rem;
+    background-color: $white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    img:not(.header-logo) {
+        height: 2.5rem;
+        float: left;
+        margin-right: 0.5rem;
+    }
+
+    .header-item-adress {
+        margin-bottom: 1rem;
+        img {
+            margin-top: 0.5rem;
+        }
+
+        .header-item-span-1 {
+            display: block;
+        }
+
+        .header-item-span-2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .header-item-datetime {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-center{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        img {
+            height: 4rem;
+        }
+
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .header-right-info {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header-right-info:last-child {
+            margin-bottom: 0;
+        }
+        span {
+            margin-right: 1rem;
+        }
+    }
+}
+
+//Навигация
+nav {
+    display: flex;
+    justify-content: center;
+    @include adaptConteiner;
+
+    .nav-1-lvl {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .nav-2-lvl {
+        display: none;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        li {
+            border-top: 1px solid $black_orgn;
+            &:first-child {
+                border: none;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 1rem 1rem;
+                font-weight: bold;
+                text-transform: none;
+                color: $black_orgn;
+                background-color: $white;
+            }
+        }
+    }
+
+    /*При наведении на пункт меню
+    появляется подменю (если оно есть)*/
+    .nav-1-lvl li:hover > ul {
+        display: block;
+    }
+
+    .nav-link {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1rem 1rem;
+        font-weight: bold;
+        color: $black_orgn;
+        &:hover {
+            background-color: $black_orgn;
+            color: $white_orgn;
+            transition: 0.3s;
+        }
+    }
+}
+
 //Обложка
 .cover {
     display: flex;
@@ -162,7 +406,7 @@
             img{
                 border-radius: 10px;
                 width: 84rem;
-                height: 48rem;
+                height: 56rem;
             }
         }
         .portfolio__slide.active {
@@ -275,5 +519,37 @@
             margin-top: 3rem;
             font-size: 1.4rem;
         }
+    }
+}
+
+//Подвал
+footer {
+    padding: 50px 150px 50px 150px;
+    @include adaptConteiner;
+    color: $white_orgn;
+    .footer__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .footer__left {
+            p {
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+        .footer__center img {
+            height: 40px;
+        }
+        .footer__right {
+            text-align: right;
+            .footer__right__mail {
+                margin-top: 10px;
+            }
+        }
+    }
+    .footer__copyright {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
     }
 }

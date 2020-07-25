@@ -397,34 +397,9 @@
     </div>
 
     <!-- Плавный скролл до секции N ("Наши работы") -->
-    <script>
-        const btnPortfolio = document.querySelector('.cover__buttons__btn-2'),
-        portfolio = document.querySelector('.portfolio'),
-        btnForm = document.querySelector('.cover__buttons__btn-1'),
-        form = document.querySelector('.form'),
-        btnCustomers = document.querySelector('#nav-link-customers'),
-        customers = document.querySelector('.customers');
+    <script src="/js/scroll.js"></script>
 
-        scrollToDiv(btnCustomers, customers);
-        scrollToDiv(btnPortfolio, portfolio);
-        scrollToDiv(btnForm, form);
-
-        function scrollToDiv(btn, div) {
-
-            const scrollTo = elem => {
-            window.scroll({
-                left: 0,
-                top: elem.offsetTop,
-                behavior: 'smooth'
-            });
-            }
-
-            btn.addEventListener('click', () => {
-            scrollTo(div);
-        });
-        }
-    </script>
-
+    <!-- Слайдер в секции "Наши работы" -->
     <script src="js/slider.js"></script>
 </body>
 </html>

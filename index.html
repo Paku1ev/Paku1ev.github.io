@@ -10,14 +10,17 @@
     <title>Рекламно-производственная компания — Росреклама</title>
 </head>
 <body>
-    <div class="header__bar header__bar_active">
+    <!-- Выпадающее меню -->
+    <div class="header__bar">
 
-        <img class="header__bar-img" src="/img/burger-menu.svg" alt="Меню">
+        <img id="header__bar_button" class="header__bar-img" src="/img/burger-menu.svg" alt="Меню">
 
         <nav class="header__bar_nav">
+            <a href="/"><img class="header__bar_logo" src="/img/header/logo.jpg" alt="Росреклама"></a>
             <a href="/items/nav.html" class="header__bar_link">Наши работы</a>
             <a href="" class="header__bar_link">Наши клиенты</a>
             <a href="/about.html" class="header__bar_link">О компании</a>
+            <a class="header__bar_nav_img" href="https://www.instagram.com/irk_kupets/"><img src="/img/footer/instagram.svg" alt="Наш инстаграм"></a>
         </nav>
 
         <div class="header__bar_background"></div>
@@ -401,5 +404,9 @@
 
     <!-- Слайдер в секции "Наши работы" -->
     <script src="js/slider.js"></script>
+
+    <!-- Выпадающее меню для мобильных устройств -->
+    <script src="/js/dropDown-menu.js"></script>
+    
 </body>
 </html>

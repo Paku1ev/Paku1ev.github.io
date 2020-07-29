@@ -409,11 +409,6 @@ nav .nav-link:hover {
   padding: 1.5rem;
 }
 
-.advantages__items__item:hover {
-  transition: 0.4s;
-  box-shadow: 0 0 2.5rem #000;
-}
-
 .advantages__items__item img {
   width: 15rem;
 }

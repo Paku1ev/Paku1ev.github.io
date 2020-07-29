@@ -189,40 +189,4 @@ nav .nav-link:hover {
   color: #fff;
   transition: 0.3s;
 }
-
-footer {
-  padding: 50px 150px 50px 150px;
-  max-width: 114rem;
-  margin: 0 auto;
-  color: #fff;
-}
-
-footer .footer__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer .footer__container .footer__left p {
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-footer .footer__container .footer__center img {
-  height: 40px;
-}
-
-footer .footer__container .footer__right {
-  text-align: right;
-}
-
-footer .footer__container .footer__right .footer__right__mail {
-  margin-top: 10px;
-}
-
-footer .footer__copyright {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-}
 /*# sourceMappingURL=header-footer.css.map */

@@ -66,11 +66,12 @@ body {
 
 .header__bar .header__bar_nav {
   display: flex;
-  background-color: #161D23;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #161D23;
+  max-width: 270px;
   position: fixed;
-  padding: 80px 20px;
+  padding: 70px 20px;
   font-size: 28px;
   height: 100%;
   z-index: 25;
@@ -79,26 +80,31 @@ body {
 }
 
 .header__bar .header__bar_nav .header__bar_logo {
-  width: 200px;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .header__bar .header__bar_nav .header__bar_nav_img {
-  align-self: center;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__bar .header__bar_nav .header__bar_nav_img img {
   width: 40px;
 }
 
-.header__bar .header__bar_nav .header__bar_link {
+.header__bar .header__bar_nav .header__bar_links a {
+  display: flex;
+  flex-direction: column;
   color: #fff;
   text-decoration: none;
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-.header__bar .header__bar_nav .header__bar_link:hover {
+.header__bar .header__bar_nav .header__bar_links a:hover {
   color: #CA6E1B;
 }
 

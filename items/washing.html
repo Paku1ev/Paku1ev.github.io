@@ -11,7 +11,29 @@
     <title>Рекламно-производственная компания — Росреклама</title>
 </head>
 <body>
-    <img class="header__bar-img" src="/img/burger-menu.svg">
+    <!-- Выпадающее меню -->
+    <div class="header__bar">
+
+        <img id="header__bar_button" class="header__bar-img" src="/img/burger-menu.svg" alt="Меню">
+
+        <nav class="header__bar_nav">
+            <div>
+                <a href="/"><img class="header__bar_logo" src="/img/header/logo.jpg" alt="Росреклама"></a>
+            </div>
+            <div class="header__bar_links">
+                <a href="/items/nav.html">Наши работы</a>
+                <a href="">Наши клиенты</a>
+                <a href="/about.html">О компании</a>
+            </div>
+            <div class="header__bar_nav_img">
+                <a href="https://www.instagram.com/irk_kupets/" target="_blank"><img src="/img/footer/instagram.svg" alt="Наш инстаграм"></a>
+            </div>
+        </nav>
+
+        <div class="header__bar_background"></div>
+
+    </div>
+    
     <div class="header-container">
         <!-- Шапка -->
         <header>
@@ -251,5 +273,9 @@
             <div class="footer__copyright">&#169; 2019-2020 ООО &#171;Росреклама&#187; Все права защищены.</div>
         </footer>
     </div>
+    
+    <!-- Выпадающее меню для мобильных устройств -->
+    <script src="/js/dropDown-menu.js"></script>
+
 </body>
 </html>

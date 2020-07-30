@@ -5,7 +5,6 @@ overlay = document.querySelector('.header__bar_background');
 button.addEventListener('click', activationMenu);
 overlay.addEventListener('click', activationMenu);
 
-
 function activationMenu() {
     /*
     Проверяем, если у выпадающего меню есть класс *active, то этот класс надо удалить.

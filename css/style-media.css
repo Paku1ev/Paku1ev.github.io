@@ -41,9 +41,6 @@
   .advantages__items {
     grid-template-columns: 1fr 1fr;
   }
-  .advantages__items__item:hover {
-    box-shadow: none;
-  }
   .portfolio {
     display: none;
   }
